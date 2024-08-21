@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    # TODO: Apply fixes to nixos-xps
+    # TODO: Apply fixes to nixos-precision
     hardware.url = "github:nixos/nixos-hardware";
     nix-colors.url = "github:misterio77/nix-colors";
 
@@ -91,10 +91,10 @@
       };
 
       # Home Laptop
-      nixos-xps = lib.nixosSystem {
+      nixos-precision = lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
-          ./hosts/nixos-xps
+          ./hosts/nixos-precision
           home-manager.nixosModules.home-manager
           {
             home-manager.extraSpecialArgs = {inherit inputs outputs;};

@@ -9,24 +9,24 @@ in {
   imports = [
     inputs.sops-nix.nixosModules.sops
   ];
-  users.users.dileep = {
+  users.users.mihai = {
     isNormalUser = true;
-    description = "Dileep Kishore";
+    description = "mihai";
     shell = pkgs.zsh;
     extraGroups = ["networkmanager" "wheel" "docker" "podman"] ++ ifTheyExist ["libvirtd" "mysql" "network" "git"];
     packages = [pkgs.home-manager];
   };
 
   # Import this user's personal/home configurations
-  home-manager.users.dileep = import ../../../../home/${config.networking.hostName}.nix;
+  home-manager.users.mihai = import ../../../../home/${config.networking.hostName}.nix;
 
   # Sops secrets
   sops = {
     defaultSopsFile = ./secrets/secrets.yaml;
     defaultSopsFormat = "yaml";
-    age.keyFile = "/home/dileep/.config/sops/age/keys.txt";
+    age.keyFile = "/home/mihai/.config/sops/age/keys.txt";
     secrets.OPENAI_API_KEY = {
-      owner = config.users.users.dileep.name;
+      owner = config.users.users.mihai.name;
     };
   };
 
@@ -37,7 +37,7 @@ in {
       enable = true;
       # Certain features, including CLI integration and system authentication support,
       # require enabling PolKit integration on some desktop environments (e.g. Plasma).
-      polkitPolicyOwners = ["dileep"];
+      polkitPolicyOwners = ["mihai"];
     };
   };
 
@@ -47,19 +47,19 @@ in {
     after = ["network.target"];
     wantedBy = ["multi-user.target"];
     script = ''
-      mkdir -p /home/dileep/.secrets
-      echo $(cat ${config.sops.secrets.OPENAI_API_KEY.path}) > /home/dileep/.secrets/openai_api_key.txt
+      mkdir -p /home/mihai/.secrets
+      echo $(cat ${config.sops.secrets.OPENAI_API_KEY.path}) > /home/mihai/.secrets/openai_api_key.txt
     '';
     serviceConfig = {
-      User = "dileep";
-      WorkingDirectory = "/home/dileep";
+      User = "mihai";
+      WorkingDirectory = "/home/mihai";
     };
   };
   systemd.services.openaisecret.enable = true;
 
   # vpn
   # TODO: Figure out how to make nordvpn connection more dynamic
-  services.openvpn.servers = {
-    homeVPN = {config = ''config /home/dileep/.nordvpn/us9565.nordvpn.com.udp.ovpn '';};
-  };
+  #services.openvpn.servers = {
+  #  homeVPN = {config = ''config /home/mihai/.nordvpn/us9565.nordvpn.com.udp.ovpn '';};
+  #};
 }

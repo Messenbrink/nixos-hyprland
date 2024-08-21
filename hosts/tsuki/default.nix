@@ -19,7 +19,7 @@
       ../common/optional/wacom.nix
 
       # User config
-      ../common/users/dileep
+      ../common/users/mihai
     ]
     ++ (builtins.attrValues outputs.nixosModules);
 

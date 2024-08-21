@@ -11,10 +11,10 @@
   };
   # Include monitors_x.conf depending on the hostname in nix
   home.file.".config/hypr/monitors.conf" = {
-    source = ./monitors-nixos-xps.conf;
+    source = ./monitors-nixos-precision.conf;
   };
   home.file.".config/hypr/hyprpaper.conf" = {
-    source = ./hyprpaper-nixos-xps.conf;
+    source = ./hyprpaper-nixos-precision.conf;
   };
 
   home.packages = with pkgs; [

@@ -8,7 +8,7 @@
   imports =
     [
       # Hardware config
-      inputs.hardware.nixosModules.dell-xps-15-9520-nvidia
+      # inputs.hardware.nixosModules.dell-xps-15-9520-nvidia
       ./hardware-configuration.nix
 
       # Common config
@@ -19,7 +19,7 @@
       ../common/optional/wacom.nix
 
       # User config
-      ../common/users/dileep
+      ../common/users/mihai
     ]
     ++ (builtins.attrValues outputs.nixosModules);
 
@@ -34,7 +34,7 @@
   boot.loader.systemd-boot.configurationLimit = 15;
   boot.supportedFilesystems = ["ntfs"];
 
-  networking.hostName = "nixos-xps"; # Define your hostname.
+  networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   hardware.graphics = {
@@ -52,7 +52,7 @@
   services.xserver = {
     enable = true;
     xkb.options = "ctrl:nocaps";
-    xkb.layout = "us";
+    xkb.layout = "dk";
     xkb.variant = "";
     displayManager.gdm.enable = true;
   };
