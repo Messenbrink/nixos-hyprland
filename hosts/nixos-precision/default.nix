@@ -34,7 +34,7 @@
   boot.loader.systemd-boot.configurationLimit = 15;
   boot.supportedFilesystems = ["ntfs"];
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "nixos-precision"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   hardware.graphics = {
