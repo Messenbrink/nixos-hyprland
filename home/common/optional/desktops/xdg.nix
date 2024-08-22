@@ -16,10 +16,10 @@
     enable = true;
     defaultApplications = {
       "application/pdf" = ["okular.desktop"];
-      "text/html" = ["brave-browser.desktop"];
-      "application/xhtml+xml" = ["brave-browser.desktop"];
-      "x-scheme-handler/http" = ["brave-browser.desktop"];
-      "x-scheme-handler/https" = ["brave-browser.desktop"];
+      "text/html" = ["librewolf-browser.desktop"];
+      "application/xhtml+xml" = ["librewolf-browser.desktop"];
+      "x-scheme-handler/http" = ["librewolf-browser.desktop"];
+      "x-scheme-handler/https" = ["librewolf-browser.desktop"];
     };
   };
 }

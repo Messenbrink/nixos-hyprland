@@ -6,7 +6,7 @@
     _1password
     _1password-gui
     libgcc
-    brave
+    librewolf
     gnome.eog
     gnome.nautilus
     gnome.seahorse
@@ -23,6 +23,7 @@
     psmisc
     signal-desktop
     udisks
+    helix
     vscode-fhs
     zotero_7
   ];

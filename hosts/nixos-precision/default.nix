@@ -44,7 +44,7 @@
 
   # Load nvidia driver for Xorg and Wayland
   services.xserver.videoDrivers = ["nvidia"];
-  services.xserver.xkbOptions = "ctrl:nocaps";
+  services.xserver.xkb.options = "ctrl:nocaps";
   console.useXkbConfig = true;
   hardware.bluetooth.enable = true;
 
