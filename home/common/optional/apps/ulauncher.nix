@@ -11,7 +11,6 @@
           python3Packages.simpleeval
           python3Packages.parsedatetime
           python3Packages.pytz
-          python3Packages.todoist-api-python
         ];
     }))
   ];

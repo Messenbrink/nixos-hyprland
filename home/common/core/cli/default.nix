@@ -31,7 +31,6 @@
     fd
     git-extras
     gnumake
-    htop
     jc
     jq
     just
@@ -45,7 +44,6 @@
     p7zip
     pciutils
     tldr
-    todoist
     unrar
     unzip
     vim

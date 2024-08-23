@@ -97,7 +97,6 @@ home-manager switch --flake '.#<user>@<host>'
 - [Ulauncher](https://github.com/Ulauncher/Ulauncher) extensions
   - Emoji
   - ChatGPT
-  - Todoist
   - Clipboard
   - Calculate Anything
   - Better file browser

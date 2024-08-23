@@ -42,7 +42,7 @@
   # Configure keymap in X11
   services.xserver = {
     enable = true;
-    #videoDrivers = ["nvidia"];
+    videoDrivers = ["nvidia"];
     xkb.options = "ctrl:nocaps";
     xkb.layout = "dk";
     xkb.variant = "";
@@ -55,19 +55,19 @@
       enable = true;
       enable32Bit = true;
     };
-    # nvidia = {
-    #   modesetting.enable = true;
-    #   powerManagement.enable = true;
-    #   powerManagement.finegrained = false;
-    #   open = false;
-    #   nvidiaSettings = true;
-    #   package = config.boot.kernelPackages.nvidiaPackages.stable;
-    #   prime = {
-    #     # sync.enable = true;
-    #     intelBusId = "PCI:0:02:0";
-    #     nvidiaBusId = "PCI:1:0:0";
-    #   };
-    # };
+    nvidia = {
+      modesetting.enable = true;
+      powerManagement.enable = true;
+      powerManagement.finegrained = false;
+      open = false;
+      nvidiaSettings = true;
+      package = config.boot.kernelPackages.nvidiaPackages.beta;
+      prime = {
+        # sync.enable = true;
+        intelBusId = "PCI:0:02:0";
+        nvidiaBusId = "PCI:1:0:0";
+      };
+    };
   };
 
   system.stateVersion = "24.05";
