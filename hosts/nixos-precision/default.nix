@@ -56,18 +56,18 @@
     displayManager.gdm.enable = true;
   };
 
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = true;
-    powerManagement.finegrained = false;
-    open = false;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
-    prime = {
-      intelBusId = "PCI:0:02:0";
-      nvidiaBusId = "PCI:1:00:0";
-    };
-  };
+  # hardware.nvidia = {
+  #   modesetting.enable = true;
+  #   powerManagement.enable = true;
+  #   powerManagement.finegrained = false;
+  #   open = false;
+  #   nvidiaSettings = true;
+  #   package = config.boot.kernelPackages.nvidiaPackages.stable;
+  #   prime = {
+  #     intelBusId = "PCI:0:02:0";
+  #     nvidiaBusId = "PCI:1:00:0";
+  #   };
+  # };
 
   system.stateVersion = "23.11";
 }
