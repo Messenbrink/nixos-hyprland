@@ -37,14 +37,7 @@
   networking.hostName = "nixos-precision"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # hardware.graphics = {
-  #   enable = true;
-  #   enable32Bit = true;
-  # };
-
-  # Load nvidia driver for Xorg and Wayland
   console.useXkbConfig = true;
-  hardware.bluetooth.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
@@ -56,16 +49,26 @@
     displayManager.gdm.enable = true;
   };
 
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = true;
-    powerManagement.finegrained = false;
-    open = true;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
-    prime = {
-      intelBusId = "PCI:0:02:0";
-      nvidiaBusId = "PCI:1:00:0";
+  hardware = {
+    bluetooth.enable = true;
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
+    opengl = {
+      enable = true;
+    };
+    nvidia = {
+      modesetting.enable = true;
+      powerManagement.enable = true;
+      powerManagement.finegrained = false;
+      open = false;
+      nvidiaSettings = true;
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
+      prime = {
+        intelBusId = "PCI:0:02:0";
+        nvidiaBusId = "PCI:1:00:0";
+      };
     };
   };
 
