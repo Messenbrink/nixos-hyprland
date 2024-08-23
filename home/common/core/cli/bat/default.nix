@@ -6,7 +6,7 @@
     config = {
       # Show line numbers, Git modifications and file header (but no grid)
       style = "numbers,changes,header";
-      theme = "Catppuccin-mocha";
+      theme = "nord";
     };
     extraPackages = builtins.attrValues {
       inherit
@@ -20,10 +20,10 @@
   };
 
   # copy themes
-  home.file.".config/bat/themes" = {
-    recursive = true;
-    source = ./themes;
-  };
+  # home.file.".config/bat/themes" = {
+  #   recursive = true;
+  #   source = ./themes;
+  # };
 
   # aliases
   home.shellAliases = {

@@ -13,7 +13,7 @@
     noto-fonts
     noto-fonts-emoji
     dotcolon-fonts
-    papirus-icon-theme
+    papirus-nord
     recursive
     sn-pro
     comfortaa

@@ -2,21 +2,22 @@
   gtk = {
     enable = true;
     iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme;
+      name = "frostblue3";
+      package = pkgs.papirus-nord;
     };
     cursorTheme = {
       name = "Bibata-Modern-Ice";
       package = pkgs.bibata-cursors;
     };
     theme = {
-      name = "Catppuccin-Mocha-Standard-Mauve-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = ["mauve"];
-        size = "standard";
-        tweaks = ["black"];
-        variant = "mocha";
-      };
+      name = "Nordic-Polar";
+      package = pkgs.nordic;
+      # .override {
+      #   accents = ["mauve"];
+      #   size = "standard";
+      #   tweaks = ["black"];
+      #   variant = "mocha";
+      # };
     };
     gtk3.extraConfig = {
       Settings = ''
