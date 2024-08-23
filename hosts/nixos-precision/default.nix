@@ -37,10 +37,10 @@
   networking.hostName = "nixos-precision"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
+  # hardware.graphics = {
+  #   enable = true;
+  #   enable32Bit = true;
+  # };
 
   # Load nvidia driver for Xorg and Wayland
   services.xserver.videoDrivers = ["nvidia"];
