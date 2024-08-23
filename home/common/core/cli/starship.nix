@@ -89,7 +89,7 @@
         "$dart"
         "$ruby"
         "$scala"
-        # "$typst"
+        "$typst"
         "$c"
         "$memory_usage"
         "$cmd_duration"
@@ -270,11 +270,11 @@
         format = "[](fg:love)[$symbol($version)]($style)[](fg:love)";
         style = "bold bg:love fg:base";
       };
-      # typst = {
-      #   symbol = "t ";
-      #   format = "[](fg:pine)[$symbol($version)]($style)[](fg:pine)";
-      #   style = "bold bg:pine fg:base";
-      # };
+      typst = {
+        symbol = "t ";
+        format = "[](fg:pine)[$symbol($version)]($style)[](fg:pine)";
+        style = "bold bg:pine fg:base";
+      };
 
       c = {
         format = "[](fg:pine)[$symbol($version(-$name))]($style)[](fg:pine)";

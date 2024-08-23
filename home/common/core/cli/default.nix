@@ -25,7 +25,7 @@
   ];
 
   home.packages = with pkgs; [
-    inputs.neovim.packages.${system}.default
+    # inputs.neovim.packages.${system}.default
     coreutils-full
     entr
     fd
@@ -41,7 +41,7 @@
     ncdu
     neofetch
     nix-tree
-    openvpn
+    # openvpn
     p7zip
     pciutils
     tldr
