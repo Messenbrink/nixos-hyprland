@@ -21,7 +21,6 @@
     overlays = builtins.attrValues outputs.overlays;
     config = {
       allowUnfree = true;
-      allowBroken = true;
       permittedInsecurePackages = [
         "electron-28.3.3"
         "electron-27.3.11"
