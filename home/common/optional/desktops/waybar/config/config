@@ -23,9 +23,9 @@
     //"temperature",
     "backlight",
     "custom/toggl",
-    "battery",
+    //"battery",
     "battery#bat2",
-    "tray"
+    //"tray"
   ],
   // Modules configuration
   "hyprland/workspaces": {
