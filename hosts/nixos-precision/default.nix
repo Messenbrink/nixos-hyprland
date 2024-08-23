@@ -33,6 +33,7 @@
   boot.loader.grub.configurationLimit = 15;
   boot.loader.systemd-boot.configurationLimit = 15;
   boot.supportedFilesystems = ["ntfs"];
+  boot.kernelParams = [ "module_blacklist=i915" ];
 
   networking.hostName = "nixos-precision"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -63,7 +64,7 @@
       nvidiaSettings = true;
       package = config.boot.kernelPackages.nvidiaPackages.stable;
       prime = {
-        sync.enable = true;
+        # sync.enable = true;
         intelBusId = "PCI:0:02:0";
         nvidiaBusId = "PCI:1:0:0";
       };
