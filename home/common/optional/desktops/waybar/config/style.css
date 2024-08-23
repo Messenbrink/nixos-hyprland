@@ -112,27 +112,15 @@ window.HDMI-A-1 #custom-toggl {
   margin-right: 0px;
 }
 
-#cpu {
-  color: @rose;
-}
-
-#memory {
-  color: @gold;
-}
-
-#custom-toggl {
-  color: @iris;
+#cpu, #memory, #custom-toggl, #backlight, #battery {
+  color: @text;
 }
 
 #clock {
-  color: @rose;
-  border-radius:1rem;
+  color: @text;
+  border-radius: 1rem;
   margin-right: 1rem;
   /* border-right: 4px solid @pine; */
-}
-
-#battery {
-  color: @rose;
 }
 
 #battery.charging {
@@ -143,41 +131,37 @@ window.HDMI-A-1 #custom-toggl {
   color: @pine;
 }
 
-#backlight {
-  color: @gold;
-}
-
 #backlight,
 #battery {
-  border-radius: 0;
+  border-radius: 1rem;
 }
 
 #pulseaudio {
-  color: @love;
+  color: @text;
   border-radius: 1rem;
   margin-left: 1rem;
   /* border-left: 4px solid @pine; */
 }
 
 #custom-music {
-  color: @iris;
+  color: @text;
   border-radius: 1rem;
 }
 
 #custom-lock {
   border-radius: 1rem;
-  color: @foam;
+  color: @text;
 }
 
 #custom-power {
   margin-right: 1rem;
   border-radius: 1rem;
-  color: @pine;
+  color: @text;
 }
 
 #tray {
   margin-right: 1rem;
   border-radius: 1rem;
-  border-right: 4px solid @pine;
-  border-left: 4px solid @pine;
+  /* border-right: 4px solid @pine;
+  border-left: 4px solid @pine; */
 }

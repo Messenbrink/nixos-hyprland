@@ -16,7 +16,7 @@
 
       # Optional configs
       ../common/optional/hyprland.nix
-      ../common/optional/wacom.nix
+      # ../common/optional/wacom.nix
 
       # User config
       ../common/users/mihai
@@ -43,31 +43,31 @@
   # };
 
   # Load nvidia driver for Xorg and Wayland
-  # services.xserver.videoDrivers = ["nvidia"];
   console.useXkbConfig = true;
   hardware.bluetooth.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
     enable = true;
+    videoDrivers = ["nvidia"];
     xkb.options = "ctrl:nocaps";
     xkb.layout = "dk";
     xkb.variant = "";
     displayManager.gdm.enable = true;
   };
 
-  # hardware.nvidia = {
-  #   modesetting.enable = true;
-  #   powerManagement.enable = true;
-  #   powerManagement.finegrained = false;
-  #   open = false;
-  #   nvidiaSettings = true;
-  #   package = config.boot.kernelPackages.nvidiaPackages.stable;
-  #   prime = {
-  #     intelBusId = "PCI:0:02:0";
-  #     nvidiaBusId = "PCI:1:00:0";
-  #   };
-  # };
+  hardware.nvidia = {
+    modesetting.enable = true;
+    powerManagement.enable = true;
+    powerManagement.finegrained = false;
+    open = true;
+    nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    prime = {
+      intelBusId = "PCI:0:02:0";
+      nvidiaBusId = "PCI:1:00:0";
+    };
+  };
 
   system.stateVersion = "24.05";
 }

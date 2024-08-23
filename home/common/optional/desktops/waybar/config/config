@@ -23,8 +23,8 @@
     //"temperature",
     "backlight",
     "custom/toggl",
-    //"battery",
-    "battery#bat2"
+    "battery",
+    //"battery#bat2"
     //"tray"
   ],
   // Modules configuration
