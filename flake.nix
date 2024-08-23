@@ -2,7 +2,7 @@
   description = "NixOS hyprland setup";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     # TODO: Apply fixes to nixos-precision
     hardware.url = "github:nixos/nixos-hardware";
