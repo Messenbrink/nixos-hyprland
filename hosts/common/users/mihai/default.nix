@@ -21,14 +21,14 @@ in {
   home-manager.users.mihai = import ../../../../home/${config.networking.hostName}.nix;
 
   # Sops secrets
-  sops = {
-    defaultSopsFile = ./secrets/secrets.yaml;
-    defaultSopsFormat = "yaml";
-    age.keyFile = "/home/mihai/.config/sops/age/keys.txt";
-    secrets.OPENAI_API_KEY = {
-      owner = config.users.users.mihai.name;
-    };
-  };
+  # sops = {
+  #   defaultSopsFile = ./secrets/secrets.yaml;
+  #   defaultSopsFormat = "yaml";
+  #   age.keyFile = "/home/mihai/.config/sops/age/keys.txt";
+  #   secrets.OPENAI_API_KEY = {
+  #     owner = config.users.users.mihai.name;
+  #   };
+  # };
 
   # 1password
   programs = {
@@ -42,20 +42,20 @@ in {
   };
 
   # OpenAI API Key
-  systemd.services."openaisecret" = {
-    description = "OpenAI API Key";
-    after = ["network.target"];
-    wantedBy = ["multi-user.target"];
-    script = ''
-      mkdir -p /home/mihai/.secrets
-      echo $(cat ${config.sops.secrets.OPENAI_API_KEY.path}) > /home/mihai/.secrets/openai_api_key.txt
-    '';
-    serviceConfig = {
-      User = "mihai";
-      WorkingDirectory = "/home/mihai";
-    };
-  };
-  systemd.services.openaisecret.enable = true;
+  # systemd.services."openaisecret" = {
+  #   description = "OpenAI API Key";
+  #   after = ["network.target"];
+  #   wantedBy = ["multi-user.target"];
+  #   script = ''
+  #     mkdir -p /home/mihai/.secrets
+  #     echo $(cat ${config.sops.secrets.OPENAI_API_KEY.path}) > /home/mihai/.secrets/openai_api_key.txt
+  #   '';
+  #   serviceConfig = {
+  #     User = "mihai";
+  #     WorkingDirectory = "/home/mihai";
+  #   };
+  # };
+  # systemd.services.openaisecret.enable = true;
 
   # vpn
   # TODO: Figure out how to make nordvpn connection more dynamic
