@@ -15,6 +15,6 @@
   home = {
     username = "g8k";
     homeDirectory = "/Users/${config.home.username}";
-    stateVersion = "23.11";
+    stateVersion = "25.05";
   };
 }

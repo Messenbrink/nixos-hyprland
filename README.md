@@ -68,7 +68,7 @@
 
 ### Requirements
 
-- NixOS 23.11 or Home-manager
+- NixOS 24.05 or Home-manager
 - Patience
 - Knowledge
 - Disk space

@@ -8,11 +8,12 @@
   // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
-    "wlr/taskbar",
-    "hyprland/window"
+    //"wlr/taskbar",
+    //"hyprland/window",
+    "hyprland/workspaces"
   ],
   "modules-center": [
-    "hyprland/workspaces"
+    "clock",
   ],
   "modules-right": [
     "pulseaudio",
@@ -24,7 +25,6 @@
     "custom/toggl",
     "battery",
     "battery#bat2",
-    "clock",
     "tray"
   ],
   // Modules configuration
@@ -34,27 +34,27 @@
     "warp-on-scroll": false,
     "format": "<span><b>{icon}</b></span>",
     "format-icons": {
-      "1": "一",
-      "2": "二",
-      "3": "三",
-      "4": "四",
-      "5": "五",
-      "6": "六",
-      "7": "七",
-      "8": "八",
-      "9": "九",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
       "urgent": "",
       "focused": "",
       "default": "󰧞"
     }
   },
-  "wlr/taskbar": {
-    "all-outputs": false
-  },
-  "hyprland/window": {
-    "max-length": 50,
-    "separate-outputs": true
-  },
+  // "wlr/taskbar": {
+  //   "all-outputs": false
+  // },
+  // "hyprland/window": {
+  //   "max-length": 50,
+  //   "separate-outputs": true
+  // },
   "keyboard-state": {
     "numlock": true,
     "capslock": true,
