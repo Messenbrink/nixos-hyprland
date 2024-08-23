@@ -4,7 +4,7 @@
     (nerdfonts.override {
       fonts = ["FiraCode" "CascadiaCode" "FantasqueSansMono"];
     })
-    adobe-source-code-pro-fonts
+    # adobe-source-code-pro-fonts
     font-awesome
     ia-writer-duospace
     ia-writer-quattro
