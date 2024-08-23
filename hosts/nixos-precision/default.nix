@@ -55,9 +55,6 @@
       enable = true;
       enable32Bit = true;
     };
-    opengl = {
-      enable = true;
-    };
     nvidia = {
       modesetting.enable = true;
       powerManagement.enable = true;
@@ -68,7 +65,7 @@
       prime = {
         sync.enable = true;
         intelBusId = "PCI:0:02:0";
-        nvidiaBusId = "PCI:1:00:0";
+        nvidiaBusId = "PCI:1:0:0";
       };
     };
   };
