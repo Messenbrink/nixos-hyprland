@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs.config.allowBroken = true;
 
     # TODO: Apply fixes to nixos-precision
     hardware.url = "github:nixos/nixos-hardware";
