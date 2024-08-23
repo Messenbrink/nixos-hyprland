@@ -1,7 +1,7 @@
 @import "rose-pine.css";
 
 * {
-  font-family: "Rec Mono Semicasual", "CaskaydiaCove NF";
+  font-family: "FiraCode Nerd Font Mono", "Rec Mono Semicasual", "CaskaydiaCove NF";
   font-size: 15px;
   min-height: 0;
 }

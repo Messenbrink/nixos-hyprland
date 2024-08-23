@@ -2,16 +2,16 @@
   programs.kitty = {
     enable = true;
     font = {
-      name = "Rec Mono Semicasual";
+      name = "FiraCode Nerd Font Mono";
       size = 13.0;
     };
     shellIntegration.enableBashIntegration = true;
     shellIntegration.enableZshIntegration = true;
-    theme = "Rosé Pine";
+    # theme = "Rosé Pine";
     settings = {
-      bold_font = "Rec Mono Semicasual Bold";
-      italic_font = "Rec Mono Semicasual Italic";
-      bold_italic_font = "Rec Mono Semicasual Bold Italic";
+      bold_font = "auto";
+      italic_font = "auto";
+      bold_italic_font = "auto";
     };
   };
 }
