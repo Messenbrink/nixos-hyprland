@@ -4,24 +4,25 @@
     (nerdfonts.override {
       fonts = ["FiraCode" "CascadiaCode" "FantasqueSansMono"];
     })
+    adobe-source-code-pro-fonts
     font-awesome
-    noto-fonts
-    noto-fonts-emoji
-    recursive
-    sn-pro
-    ia-writer-quattro
     ia-writer-duospace
+    ia-writer-quattro
+    inter-font
     libre-baskerville
     monaspace
-    papirus-icon-them
+    noto-fonts
+    noto-fonts-emoji
+    otf-firamono-nerd
     otf-sora
-    ttf-nerd-fonts-symbols-common
-    otf-firamono-nerd inter-font
-    ttf-fantasque-nerd noto-fonts
-    noto-fonts-emoji ttf-comfortaa
-    ttf-jetbrains-mono-nerd
+    papirus-icon-theme
+    recursive
+    sn-pro
+    ttf-comfortaa
+    ttf-fantasque-nerd
     ttf-icomoon-feather
     ttf-iosevka-nerd
-    adobe-source-code-pro-fonts
+    ttf-jetbrains-mono-nerd
+    ttf-nerd-fonts-symbols-common
   ];
 }
