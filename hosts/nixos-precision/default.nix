@@ -51,10 +51,10 @@
 
   hardware = {
     bluetooth.enable = true;
-    graphics = {
-      enable = true;
-      enable32Bit = true;
-    };
+    # graphics = {
+    #   enable = true;
+    #   enable32Bit = true;
+    # };
     nvidia = {
       modesetting.enable = true;
       powerManagement.enable = true;
