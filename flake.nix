@@ -28,10 +28,10 @@
     };
 
     # neovim
-    neovim = {
-      url = "github:dileep-kishore/neovim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # neovim = {
+    #   url = "github:dileep-kishore/neovim";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # hyprland
     hyprland = {
