@@ -46,7 +46,7 @@
     xkb.options = "ctrl:nocaps";
     xkb.layout = "dk";
     xkb.variant = "";
-    displayManager.gdm.enable = true;
+    displayManager.sddm.enable = true;
   };
 
   hardware = {
