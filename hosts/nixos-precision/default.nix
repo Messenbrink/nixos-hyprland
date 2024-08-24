@@ -46,7 +46,7 @@
     xkb.options = "ctrl:nocaps";
     xkb.layout = "dk";
     xkb.variant = "";
-    displayManager.sddm.enable = true;
+    displayManager.gdm.enable = true;
   };
 
   hardware = {
@@ -61,7 +61,7 @@
       powerManagement.finegrained = false;
       open = false;
       nvidiaSettings = true;
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
+      package = config.boot.kernelPackages.nvidiaPackages.latest;
       prime = {
         # sync.enable = true;
         intelBusId = "PCI:0:02:0";
