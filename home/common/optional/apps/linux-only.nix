@@ -5,16 +5,18 @@
   home.packages = with pkgs; [
     _1password
     _1password-gui
-    libgcc
-    librewolf
+    # kdePackages.wacomtablet
+    chromium
     gnome.eog
     gnome.nautilus
     gnome.seahorse
     gparted
-    kdePackages.wacomtablet
+    helix
+    libgcc
     libreoffice-fresh
+    librewolf
     libsForQt5.okular
-    libwacom
+    # libwacom
     logseq
     lshw
     morgen
@@ -23,7 +25,6 @@
     psmisc
     signal-desktop
     udisks
-    helix
     vscode-fhs
     zotero_7
   ];

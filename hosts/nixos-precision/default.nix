@@ -16,7 +16,7 @@
 
       # Optional configs
       ../common/optional/hyprland.nix
-      ../common/optional/wacom.nix
+      # ../common/optional/wacom.nix
 
       # User config
       ../common/users/mihai
