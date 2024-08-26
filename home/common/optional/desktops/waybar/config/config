@@ -22,7 +22,7 @@
     "memory",
     //"temperature",
     "backlight",
-    "custom/toggl",
+    //"custom/toggl",
     "battery"
     //"battery#bat2"
     //"tray"
@@ -221,9 +221,9 @@
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   },
-  "custom/toggl": {
-    "format": "{}",
-    "exec": "$HOME/.config/waybar/toggl_polybar.py",
-    "interval": 10
-  }
+  // "custom/toggl": {
+  //   "format": "{}",
+  //   "exec": "$HOME/.config/waybar/toggl_polybar.py",
+  //   "interval": 10
+  // }
 }
