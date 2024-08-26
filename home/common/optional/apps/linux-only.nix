@@ -7,9 +7,9 @@
     _1password-gui
     # kdePackages.wacomtablet
     chromium
-    gnome.eog
-    gnome.nautilus
-    gnome.seahorse
+    eog
+    nautilus
+    seahorse
     gparted
     helix
     libgcc
@@ -25,7 +25,7 @@
     psmisc
     signal-desktop
     udisks
-    vscode-fhs
+    # vscode-fhs
     zotero_7
   ];
 }
