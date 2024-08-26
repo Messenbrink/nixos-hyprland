@@ -5,7 +5,7 @@
 }: {
   imports = [
     ./atuin.nix
-    ./bat
+    # ./bat
     ./btop
     ./direnv.nix
     ./eza.nix
@@ -15,10 +15,10 @@
     ./git-cliff.nix
     ./jujutsu.nix
     ./lazygit.nix
-    ./mods
+    #./mods
     ./ripgrep.nix
-    ./scripts.nix
-    ./starship.nix
+    #./scripts.nix
+    #./starship.nix
     ./tmux
     ./yazi
     ./zoxide.nix
