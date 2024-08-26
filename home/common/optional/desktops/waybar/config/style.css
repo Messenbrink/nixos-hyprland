@@ -26,7 +26,6 @@ window.HDMI-A-1 #custom-toggl {
   font-size: 0px;
   padding: 0;
   border: 0;
-  border-radius: 1rem;
   margin: 0;
   background-color: transparent;
 }
@@ -102,6 +101,7 @@ window.HDMI-A-1 #custom-toggl {
   background-color: @base;
   padding: 0.1rem 0.7rem;
   margin: 3px 0;
+  border-radius: 1rem;
   /* border-top: 4px solid @pine;
   border-bottom: 4px solid @pine; */
   /* border: 2px solid @pine; */

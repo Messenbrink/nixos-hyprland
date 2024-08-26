@@ -42,7 +42,7 @@
   # Configure keymap in X11
   services.xserver = {
     enable = true;
-    videoDrivers = ["nvidia"];
+    videoDrivers = ["intel"];
     xkb.options = "ctrl:nocaps";
     xkb.layout = "dk";
     xkb.variant = "";
@@ -61,7 +61,7 @@
       powerManagement.finegrained = false;
       open = false;
       nvidiaSettings = true;
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
+      package = config.boot.kernelPackages.nvidiaPackages.latest;
       prime = {
         offload = {
           enable = true;
