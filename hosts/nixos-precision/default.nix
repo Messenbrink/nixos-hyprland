@@ -42,7 +42,7 @@
   # Configure keymap in X11
   services.xserver = {
     enable = true;
-    videoDrivers = ["intel"];
+    videoDrivers = ["nvidia"];
     xkb.options = "ctrl:nocaps";
     xkb.layout = "dk";
     xkb.variant = "";
