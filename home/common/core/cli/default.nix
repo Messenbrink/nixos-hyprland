@@ -15,9 +15,9 @@
     ./git-cliff.nix
     ./jujutsu.nix
     ./lazygit.nix
-    #./mods
+    ./mods
     ./ripgrep.nix
-    #./scripts.nix
+    ./scripts.nix
     #./starship.nix
     ./tmux
     ./yazi
