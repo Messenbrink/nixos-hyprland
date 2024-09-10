@@ -64,7 +64,7 @@
     inherit lib;
 
     nixosModules = import ./modules/nixos;
-    # homeManagerModules = import ./modules/home-manager;
+    homeManagerModules = import ./modules/home-manager;
 
     # Custom modifications/overrides to upstream packages.
     overlays = import ./overlays {inherit inputs outputs;};
