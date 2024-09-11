@@ -13,7 +13,7 @@ in {
     isNormalUser = true;
     description = "mihai";
     shell = pkgs.zsh;
-    extraGroups = ["networkmanager" "wheel" "docker" "podman" "audio"] ++ ifTheyExist ["libvirtd" "mysql" "network" "git"];
+    extraGroups = ["networkmanager" "wheel" "docker" "podman"] ++ ifTheyExist ["libvirtd" "mysql" "network" "git"];
     packages = [pkgs.home-manager];
   };
 
