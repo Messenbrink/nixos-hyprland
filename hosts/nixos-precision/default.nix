@@ -33,6 +33,9 @@
   boot.loader.grub.configurationLimit = 15;
   boot.loader.systemd-boot.configurationLimit = 15;
   boot.supportedFilesystems = ["ntfs"];
+  boot.extraModprobeConfig = ''
+    options snd-hda-intel model=auto
+  '';
 
   networking.hostName = "nixos-precision"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
