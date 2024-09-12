@@ -7,7 +7,7 @@
     _1password-gui
     # kdePackages.wacomtablet
     chromium
-    eog
+    #eog
     nautilus
     seahorse
     gparted
