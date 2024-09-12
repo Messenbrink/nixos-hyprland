@@ -6,12 +6,27 @@
 
   home.packages = with pkgs; [
     age
-    gitkraken
+    chromium
     git
+    gitkraken
+    helix
+    libgcc
+    libreoffice-fresh
+    librewolf
+    libsForQt5.okular
+    logseq
+    lshw
+    morgen
+    obsidian
     pandoc
+    pdfarranger
+    psmisc
+    signal-desktop
     slack
-    texliveFull
     sops
+    texliveFull
+    udisks
     zoom-us
+    zotero_7
   ];
 }
