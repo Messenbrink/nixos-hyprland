@@ -33,9 +33,6 @@
   boot.loader.grub.configurationLimit = 15;
   boot.loader.systemd-boot.configurationLimit = 15;
   boot.supportedFilesystems = ["ntfs"];
-  boot.extraModprobeConfig = ''
-    options snd-hda-intel model=auto
-  '';
 
   networking.hostName = "nixos-precision"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -66,10 +63,10 @@
       nvidiaSettings = true;
       package = config.boot.kernelPackages.nvidiaPackages.beta;
       prime = {
-        offload = {
-          enable = true;
-          enableOffloadCmd = true;
-        };
+        # offload = {
+        #   enable = true;
+        #   enableOffloadCmd = true;
+        # };
         intelBusId = "PCI:0:02:0";
         nvidiaBusId = "PCI:1:0:0";
       };

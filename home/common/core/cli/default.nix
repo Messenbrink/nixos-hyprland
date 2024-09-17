@@ -18,7 +18,7 @@
     ./mods
     ./ripgrep.nix
     ./scripts.nix
-    #./starship.nix
+    ./starship.nix
     ./tmux
     ./yazi
     ./zoxide.nix
