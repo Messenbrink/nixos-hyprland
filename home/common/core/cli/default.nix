@@ -27,7 +27,6 @@
 
   home.packages = with pkgs; [
     # inputs.neovim.packages.${system}.default
-    wayland
     coreutils-full
     entr
     fd
