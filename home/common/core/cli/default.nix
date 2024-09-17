@@ -13,6 +13,7 @@
     ./gh.nix
     ./git.nix
     ./git-cliff.nix
+    ./helix.nix
     ./jujutsu.nix
     ./lazygit.nix
     ./mods
@@ -41,6 +42,7 @@
     ncdu
     neofetch
     nix-tree
+    nodePackages.typescript-language-server # Typescript Server for Helix
     # openvpn
     p7zip
     pciutils
