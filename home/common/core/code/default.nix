@@ -6,11 +6,13 @@
     nodejs_20
     quarto
     rustc
+    ruby_3_2
+    typescript
     lua
   ];
 
   # conda
-  home.file.".condarc".source = ./.condarc;
+  # home.file.".condarc".source = ./.condarc;
   # npm
   home.file.".npmrc".source = ./.npmrc;
   # stylua
