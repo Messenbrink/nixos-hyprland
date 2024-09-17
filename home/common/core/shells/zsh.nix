@@ -17,7 +17,7 @@
     };
     initExtra = ''
       bindkey '^ ' autosuggest-accept
-      export OPENAI_API_KEY="$(cat ~/.secrets/openai_api_key.txt)"
+      # export OPENAI_API_KEY="$(cat ~/.secrets/openai_api_key.txt)"
       export DIRENV_LOG_FORMAT=""
     '';
     # profileExtra = { };
