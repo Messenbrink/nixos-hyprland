@@ -41,6 +41,7 @@
     ncdu
     neofetch
     nix-tree
+    nodePackages.github-copilot-cli
     nodePackages.typescript-language-server # Typescript Server for Helix
     # openvpn
     p7zip
