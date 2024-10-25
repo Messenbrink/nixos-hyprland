@@ -43,7 +43,8 @@ window.HDMI-A-1 #custom-toggl {
   margin: 3px 0px;
   font-weight: bold;
   margin-left: 1rem;
-  background-color: @base;
+  /* background-color: @base; */
+  background-color: rgba(0,0,0,0.8);
   padding: 0.1rem 0.5rem;
   /* border: 2px solid @pine; */
 }

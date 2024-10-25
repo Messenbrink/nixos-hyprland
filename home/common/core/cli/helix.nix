@@ -13,17 +13,17 @@
       # };
       # indent-guides.render = true;
       # };
-      keys.normal = {
-        "C-p" = ":pipe github-copilot-cli suggest";
-        "C-e" = ":pipe github-copilot-cli explain";
-      };
+      #keys.normal = {
+      #  "C-p" = ":pipe github-copilot-cli suggest";
+      #  "C-e" = ":pipe github-copilot-cli explain";
+      #};
+      #language = [
+      #  {
+      #    name = "copilot";
+      #    language-server = { command = "github-copilot-language-server"; };
+      #    file-types = ["*"];
+      #  }
+      #];
     };
-    language = [
-      {
-        name = "copilot";
-        language-server = { command = "github-copilot-language-server"; };
-        file-types = ["*"];
-      }
-    ];
   };
 }

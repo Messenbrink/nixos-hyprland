@@ -5,7 +5,7 @@
 }: {
   imports = [
     ./atuin.nix
-    # ./bat
+    ./bat
     ./btop
     ./direnv.nix
     ./eza.nix
@@ -26,12 +26,14 @@
   ];
 
   home.packages = with pkgs; [
-    # inputs.neovim.packages.${system}.default
+    #inputs.neovim.packages.${system}.default
     coreutils-full
+    devbox
     entr
     fd
     git-extras
     gnumake
+    google-cloud-sdk
     jc
     jq
     just
@@ -40,13 +42,15 @@
     libxcrypt
     ncdu
     neofetch
+    nnn
     nix-tree
-    nodePackages.github-copilot-cli
+    # nodePackages.github-copilot-cli
     nodePackages.typescript-language-server # Typescript Server for Helix
     # openvpn
     p7zip
     pciutils
     tldr
+    tree
     unrar
     unzip
     vim

@@ -1,7 +1,7 @@
 {
   nix = {
     settings = {
-      experimental-features = ["nix-command" "flakes" "repl-flake"];
+      experimental-features = ["nix-command" "flakes"];
       auto-optimise-store = true;
     };
     gc = {
@@ -9,7 +9,7 @@
       dates = "weekly";
       randomizedDelaySec = "14m";
       # Keep the last 5 generations
-      options = "--delete-older-than +14";
+      options = "--delete-older-than 14d";
     };
   };
 

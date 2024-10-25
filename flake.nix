@@ -15,10 +15,10 @@
     };
 
     # nix-darwin
-    nix-darwin = {
-      url = "github:LnL7/nix-darwin";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #nix-darwin = {
+    #  url = "github:LnL7/nix-darwin";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
 
     # secrets
     sops-nix = {
@@ -28,10 +28,10 @@
     };
 
     # neovim
-    # neovim = {
-    #   url = "github:dileep-kishore/neovim";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    #neovim = {
+    #  url = "github:dileep-kishore/neovim";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
 
     # hyprland
     hyprland = {
@@ -48,12 +48,15 @@
     self,
     nixpkgs,
     home-manager,
-    nix-darwin,
+    #nix-darwin,
     ...
   } @ inputs: let
     inherit (self) outputs;
-    lib = nixpkgs.lib // home-manager.lib // nix-darwin.lib;
-    systems = ["x86_64-linux" "x86_64-darwin"];
+    lib = nixpkgs.lib // home-manager.lib; # // nix-darwin.lib;
+    systems = [
+      "x86_64-linux" 
+      # "x86_64-darwin"
+    ];
     forEachSystem = f: lib.genAttrs systems (system: f pkgsFor.${system});
     pkgsFor = lib.genAttrs systems (system:
       import nixpkgs {

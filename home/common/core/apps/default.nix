@@ -6,23 +6,27 @@
 
   home.packages = with pkgs; [
     age
+    atac
     chromium
     git
-    gitkraken
     helix
     libgcc
     libreoffice-fresh
     librewolf
     libsForQt5.okular
-    logseq
-    lshw
-    morgen
+    #logseq # a knowledge management and collaboration platform
+    lshw # Provide detailed information on the hardware configuration of the machine
+    notesnook
     obsidian
     pandoc
     pdfarranger
+    postgresql_15
+    pgcli
     psmisc
+    portal
     signal-desktop
     slack
+    sshs
     sops
     texliveFull
     udisks
