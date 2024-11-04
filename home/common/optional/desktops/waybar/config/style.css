@@ -1,17 +1,18 @@
 @import "rose-pine.css";
 
 * {
-  font-family: "FiraCode Nerd Font Mono", "Rec Mono Semicasual", "CaskaydiaCove NF";
-  font-size: 14px;
-  min-height: 0;
+    font-family: "FiraCode Nerd Font Mono", "Rec Mono Semicasual",
+        "CaskaydiaCove NF";
+    font-size: 14px;
+    min-height: 0;
 }
 
 window.HDMI-A-1 * {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 window.HDMI-A-1 #window {
-  font-size: 0px;
+    font-size: 0px;
 }
 
 window.HDMI-A-1 #network,
@@ -23,70 +24,70 @@ window.HDMI-A-1 #clock,
 window.HDMI-A-1 #battery,
 window.HDMI-A-1 #pulseaudio,
 window.HDMI-A-1 #custom-toggl {
-  font-size: 0px;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  background-color: transparent;
+    font-size: 0px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: transparent;
 }
 
 #waybar {
-  background: transparent;
-  color: @text;
-  margin: 3px -2px;
-  transition-property: background-color;
-  transition-duration: 1s;
+    background: transparent;
+    color: @text;
+    margin: 3px -2px;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
 #workspaces {
-  border-radius: 1rem;
-  margin: 3px 0px;
-  font-weight: bold;
-  margin-left: 1rem;
-  /* background-color: @base; */
-  background-color: rgba(0,0,0,0.8);
-  padding: 0.1rem 0.5rem;
-  /* border: 2px solid @pine; */
+    border-radius: 1rem;
+    margin: 3px 0px;
+    font-weight: bold;
+    margin-left: 1rem;
+    /* background-color: @base; */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.1rem 0.5rem;
+    /* border: 2px solid @pine; */
 }
 
 #workspaces button {
-  color: @iris;
-  border-radius: 1rem;
-  transition: all 0.3s ease-in-out;
+    color: @iris;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-  color: @base;
-  background-color: @pine;
-  border-radius: 1rem;
-  transition: all 0.3s ease-in-out;
-  padding: 0.1rem 3rem;
+    color: @base;
+    background-color: @pine;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    padding: 0.1rem 3rem;
 }
 
 #workspaces button:hover {
-  color: @foam;
-  border-radius: 1rem;
-  transition: all 0.3s ease-in-out;
-  padding: 0.1rem 3rem;
+    color: @foam;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    padding: 0.1rem 3rem;
 }
 
 #taskbar,
 #window {
-  border-radius: 1rem;
-  margin: 3px 0px;
-  background-color: @base;
-  /* border: 2px solid @pine; */
-  margin-left: 1rem;
-  padding: 0.1rem 1rem;
+    border-radius: 1rem;
+    margin: 3px 0px;
+    background-color: @base;
+    /* border: 2px solid @pine; */
+    margin-left: 1rem;
+    padding: 0.1rem 1rem;
 }
 
 #taskbar button:hover {
-  color: @foam;
-  border-radius: 1rem;
-  transition: all 0.3s ease-in-out;
-  /* padding: 0.1rem 2rem; */
-  padding-left: 2rem;
-  padding-right: 2rem;
+    color: @foam;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    /* padding: 0.1rem 2rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 #network,
@@ -99,71 +100,75 @@ window.HDMI-A-1 #custom-toggl {
 #battery,
 #pulseaudio,
 #custom-toggl {
-  background-color: @base;
-  padding: 0.1rem 0.7rem;
-  margin: 3px 0;
-  border-radius: 1rem;
-  /* border-top: 4px solid @pine;
+    background-color: @base;
+    padding: 0.1rem 0.7rem;
+    margin: 3px 0;
+    border-radius: 1rem;
+    /* border-top: 4px solid @pine;
   border-bottom: 4px solid @pine; */
-  /* border: 2px solid @pine; */
+    /* border: 2px solid @pine; */
 }
 
 #network {
-  color: @text;
-  margin-left: 0px;
-  margin-right: 0px;
+    color: @text;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-#cpu, #memory, #custom-toggl, #backlight, #battery {
-  color: @text;
+#cpu,
+#memory,
+#custom-toggl,
+#backlight,
+#battery {
+    color: @text;
 }
 
 #clock {
-  color: @text;
-  border-radius: 1rem;
-  margin-right: 1rem;
-  /* border-right: 4px solid @pine; */
+    color: @text;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    /* border-right: 4px solid @pine; */
 }
 
 #battery.charging {
-  color: @rose;
+    color: @rose;
 }
 
 #battery.warning:not(.charging) {
-  color: @pine;
+    color: @pine;
 }
 
 #backlight,
 #battery {
-  border-radius: 1rem;
+    border-radius: 1rem;
 }
 
 #pulseaudio {
-  color: @text;
-  border-radius: 1rem;
-  margin-left: 1rem;
-  /* border-left: 4px solid @pine; */
+    color: @text;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    /* border-left: 4px solid @pine; */
 }
 
 #custom-music {
-  color: @text;
-  border-radius: 1rem;
+    color: @text;
+    border-radius: 1rem;
 }
 
 #custom-lock {
-  border-radius: 1rem;
-  color: @text;
+    border-radius: 1rem;
+    color: @text;
 }
 
 #custom-power {
-  margin-right: 1rem;
-  border-radius: 1rem;
-  color: @text;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    color: @text;
 }
 
 #tray {
-  margin-right: 1rem;
-  border-radius: 1rem;
-  /* border-right: 4px solid @pine;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    /* border-right: 4px solid @pine;
   border-left: 4px solid @pine; */
 }

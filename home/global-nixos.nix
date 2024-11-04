@@ -5,7 +5,6 @@
 }: {
   imports = [
     ./common/core
-    #./common/optional/apps/linux-only.nix
     ./common/optional/apps/wezterm.nix
     ./common/optional/apps/kitty.nix
     ./common/optional/apps/ulauncher.nix

@@ -1,0 +1,23 @@
+/*
+* Variant: Nord Night
+* Based on Nord color scheme
+*/
+
+@define-color base            #2E3440; /* Polar Night 0 */
+@define-color surface         #3B4252; /* Polar Night 1 */
+@define-color overlay         #434C5E; /* Polar Night 2 */
+
+@define-color muted           #4C566A; /* Polar Night 3 */
+@define-color subtle          #D8DEE9; /* Snow Storm 2 */
+@define-color text            #ECEFF4; /* Snow Storm 3 */
+
+@define-color love            #BF616A; /* Aurora red */
+@define-color gold            #EBCB8B; /* Aurora yellow */
+@define-color rose            #D08770; /* Aurora orange */
+@define-color pine            #88C0D0; /* Frost lighter blue */
+@define-color foam            #8FBCBB; /* Frost cyan */
+@define-color iris            #B48EAD; /* Aurora purple */
+
+@define-color highlightLow    #3B4252; /* Polar Night 1 */
+@define-color highlightMed    #434C5E; /* Polar Night 2 */
+@define-color highlightHigh   #4C566A; /* Polar Night 3 */

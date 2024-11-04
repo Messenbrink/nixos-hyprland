@@ -14,12 +14,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # nix-darwin
-    #nix-darwin = {
-    #  url = "github:LnL7/nix-darwin";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #};
-
     # secrets
     sops-nix = {
       url = "github:Mic92/sops-nix";
@@ -48,14 +42,12 @@
     self,
     nixpkgs,
     home-manager,
-    #nix-darwin,
     ...
   } @ inputs: let
     inherit (self) outputs;
-    lib = nixpkgs.lib // home-manager.lib; # // nix-darwin.lib;
+    lib = nixpkgs.lib // home-manager.lib;
     systems = [
-      "x86_64-linux" 
-      # "x86_64-darwin"
+      "x86_64-linux"
     ];
     forEachSystem = f: lib.genAttrs systems (system: f pkgsFor.${system});
     pkgsFor = lib.genAttrs systems (system:
@@ -81,19 +73,6 @@
 
     # NOTE: home-manager is also imported as a module within nixosConfigurations
     nixosConfigurations = {
-      # Main desktop
-      tsuki = lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
-        modules = [
-          ./hosts/tsuki
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.extraSpecialArgs = {inherit inputs outputs;};
-          }
-        ];
-      };
-
-      # Home Laptop
       nixos-precision = lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
@@ -103,34 +82,6 @@
             home-manager.extraSpecialArgs = {inherit inputs outputs;};
           }
         ];
-      };
-    };
-
-    darwinConfigurations = {
-      # Work Laptop
-      Mac124929 = lib.darwinSystem {
-        specialArgs = {inherit inputs outputs;};
-        modules = [
-          ./hosts/Mac124929
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.extraSpecialArgs = {inherit inputs outputs;};
-          }
-        ];
-      };
-    };
-
-    homeConfigurations = {
-      # Work
-      "g8k@Mac124929" = lib.homeManagerConfiguration {
-        modules = [./home/Mac124929.nix];
-        pkgs = pkgsFor.x86_64-darwin;
-        extraSpecialArgs = {inherit inputs outputs;};
-      };
-      "g8k@lap135849" = lib.homeManagerConfiguration {
-        modules = [./home/lap135849.nix];
-        pkgs = pkgsFor.x86_64-linux;
-        extraSpecialArgs = {inherit inputs outputs;};
       };
     };
   };
