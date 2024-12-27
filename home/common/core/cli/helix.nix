@@ -17,13 +17,6 @@
       #  "C-p" = ":pipe github-copilot-cli suggest";
       #  "C-e" = ":pipe github-copilot-cli explain";
       #};
-      #language = [
-      #  {
-      #    name = "copilot";
-      #    language-server = { command = "github-copilot-language-server"; };
-      #    file-types = ["*"];
-      #  }
-      #];
     };
   };
 }

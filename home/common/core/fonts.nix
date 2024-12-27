@@ -1,26 +1,28 @@
 {pkgs, ...}: {
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    (nerdfonts.override {
-      fonts = ["FiraCode" "CascadiaCode" "FantasqueSansMono"];
-    })
-    source-code-pro
+    # (nerd-fonts.override {
+    #   fonts = ["FiraCode" "CascadiaCode" "FantasqueSansMono"];
+    # })
+    cascadia-code
+    comfortaa
+    dotcolon-fonts
+    fantasque-sans-mono
+    fira-code
     font-awesome
     ia-writer-duospace
     ia-writer-quattro
-    libre-baskerville
-    monaspace
-    noto-fonts
-    noto-fonts-emoji
-    dotcolon-fonts
-    papirus-nord
-    recursive
-    sn-pro
-    comfortaa
-    fantasque-sans-mono
     icomoon-feather
     iosevka
     jetbrains-mono
-    nerdfonts
+    libre-baskerville
+    monaspace
+    nerd-fonts.caskaydia-cove
+    noto-fonts
+    noto-fonts-emoji
+    papirus-nord
+    recursive
+    sn-pro
+    source-code-pro
   ];
 }

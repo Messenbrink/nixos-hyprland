@@ -17,7 +17,6 @@
     gparted
     helix
     libgcc
-    libreoffice-fresh
     librewolf
     libsForQt5.okular
     #logseq # a knowledge management and collaboration platform
@@ -34,12 +33,12 @@
     seahorse
     signal-desktop
     slack
+    sof-firmware
     sshs
     sops
     texliveFull
     udisks
     zed-editor
     zoom-us
-    zotero_7
   ];
 }

@@ -1,8 +1,9 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    python312
-    julia-bin
-    nodejs_20
+    python3
+    # julia-bin
+    go
+    nodejs_22
     quarto
     rustc
     typescript
@@ -10,7 +11,7 @@
   ];
 
   # conda
-  # home.file.".condarc".source = ./.condarc;
+  home.file.".condarc".source = ./.condarc;
   # npm
   home.file.".npmrc".source = ./.npmrc;
   # stylua

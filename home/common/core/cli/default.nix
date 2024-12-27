@@ -16,7 +16,6 @@
     ./helix.nix
     ./jujutsu.nix
     ./lazygit.nix
-    ./mods
     ./ripgrep.nix
     ./scripts.nix
     ./starship.nix
@@ -46,6 +45,7 @@
     nodePackages.typescript-language-server # Typescript Server for Helix
     # openvpn
     pciutils
+    shell-gpt
     tldr
     tree
     unrar
