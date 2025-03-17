@@ -5,7 +5,9 @@
     go
     nodejs_22
     quarto
+    gcc
     rustc
+    cargo
     typescript
     lua
   ];

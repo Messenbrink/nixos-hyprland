@@ -7,10 +7,10 @@
     ./common/core
     ./common/optional/apps/wezterm.nix
     ./common/optional/apps/kitty.nix
-    ./common/optional/apps/ulauncher.nix
+    # ./common/optional/apps/ulauncher.nix
     ./common/optional/apps/rofi
     ./common/optional/apps/wofi
-    ./common/optional/desktops/waybar
+    ./common/optional/desktops/simpleBlueColorWaybar
     ./common/optional/desktops/services/mako
     ./common/optional/desktops/gtk.nix
     ./common/optional/desktops/qt5.nix

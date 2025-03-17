@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./gpg.nix
+    # ./ollama.nix
     ./syncthing.nix
     ./zathura.nix
     ./zed.nix
@@ -12,6 +13,7 @@
     age
     atac
     chromium
+    #davinci-resolve
     eog
     git
     gparted
@@ -21,6 +23,7 @@
     libsForQt5.okular
     #logseq # a knowledge management and collaboration platform
     lshw # Provide detailed information on the hardware configuration of the machine
+    mullvad-vpn
     nautilus
     notesnook
     obsidian
@@ -30,6 +33,7 @@
     pgcli
     psmisc
     portal
+    popsicle
     seahorse
     signal-desktop
     slack
@@ -37,6 +41,8 @@
     sshs
     sops
     texliveFull
+    ollama
+    oterm
     udisks
     zed-editor
     zoom-us

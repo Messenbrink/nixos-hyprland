@@ -1,11 +1,10 @@
 {
   programs.git = {
     enable = true;
-    userEmail = "";
-    userName = "";
-    # extraConfig = {
-    #   core.editor = "nvim";
-    #   init.defaultBranch = "main";
+    # package = pkgs.gitFull;
+    extraConfig = {
+      core.editor = "hx";
+      init.defaultBranch = "main";
     #   user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPSWvSDBzAR7ol5A8Tqp9F3mOvsNSZX8IsK36VS81jpA";
     #   gpg = {
     #     format = "ssh";
@@ -14,10 +13,14 @@
     #     };
     #   };
     #   commit.gpgSign = true;
-    #   merge.conflictStyle = "zdiff3";
-    #   branch.sort = "committerdate";
-    #   push.autoSetupRemote = true;
-    # };
+    #  credentials.helper = "${pkgs.gitAndTools.gitFull}/bin/git-credential-libsecret";
+    #  credential = {
+    #    helper = "cache --timeout=3600";
+    #  };
+      merge.conflictStyle = "zdiff3";
+      branch.sort = "committerdate";
+      push.autoSetupRemote = true;
+    };
     delta = {
       enable = true;
       options = {

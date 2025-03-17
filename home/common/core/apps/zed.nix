@@ -1,12 +1,12 @@
 {
   home.file.".config/zed/settings.json".text = builtins.toJSON {
-    assistant = {
-      default_model = {
-        provider = "zed.ai";
-        model = "claude-3-5-sonnet-latest";
-      };
-      version = 2;
-    };
+    # assistant = {
+    #   default_model = {
+    #     provider = "zed.ai";
+    #     model = "claude-3-5-sonnet-latest";
+    #   };
+    #   version = 2;
+    # };
     theme = {
       mode = "system";
       light = "Nord";
